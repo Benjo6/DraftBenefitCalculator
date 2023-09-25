@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DraftBenefitCalculator.Client", "DraftBenefitCalculator.Client.csproj", "{C09AD294-29F3-4CD6-BA26-766EB6261EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C09AD294-29F3-4CD6-BA26-766EB6261EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09AD294-29F3-4CD6-BA26-766EB6261EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09AD294-29F3-4CD6-BA26-766EB6261EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09AD294-29F3-4CD6-BA26-766EB6261EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72A99D07-98B6-4F4E-B483-9C03F5734829}
+	EndGlobalSection
+EndGlobal

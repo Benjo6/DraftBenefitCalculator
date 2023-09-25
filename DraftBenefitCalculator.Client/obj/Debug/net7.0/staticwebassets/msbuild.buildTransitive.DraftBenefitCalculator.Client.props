@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DraftBenefitCalculator.Client.props" />
+</Project>

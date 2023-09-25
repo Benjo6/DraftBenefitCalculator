@@ -1,0 +1,57 @@
+﻿@page "/"
+@inherits MvvmComponentBase<SimpleCalculatorViewModel>
+
+
+<h1>Draft Benefit % Calculator</h1>
+
+<p>This app calculates the percentage of power saved by drafting behind another cyclist, based on various parameters.</p>
+
+<div class="form-group">
+    <label for="speed">Speed (km/h):</label>
+    <input type="number" id="speed" @bind="ViewModel.Request.Speed" min="0" max="100" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="distance">Drafting distance (m):</label>
+    <input type="number" id="distance" @bind="ViewModel.Request.Distance" min="0" max="20" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="gradient">Road gradient (%):</label>
+    <input type="number" id="gradient" @bind="ViewModel.Request.Gradient" min="-10" max="10" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="wind">Wind speed (km/h):</label>
+    <input type="number" id="wind" @bind="ViewModel.Request.Wind" min="-50" max="50" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="angle">Wind angle (degrees):</label>
+    <input type="number" id="angle" @bind="ViewModel.Request.Angle" min="-180" max="180" step="1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="temp">Temperature (°C):</label>
+    <input type="number" id="temp" @bind="ViewModel.Request.Temp" min="-50" max="50" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="pressure">Pressure (kPa):</label>
+    <input type="number" id="pressure" @bind="ViewModel.Request.Pressure" min="50" max="150" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="humidity">Humidity (%):</label>
+    <input type="number" id="humidity" @bind="ViewModel.Request.Humidity" min="0" max="100" step="0.1" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="area">Frontal area (m<sup>2</sup>):</label>
+    <input type="number" id="area" @bind="ViewModel.Request.Area" min="0" max="1" step="0.01" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="drag">Drag coefficient:</label>
+    <input type="number" id="drag" @bind="ViewModel.Request.Drag" min="0" max="1" step="0.01" class="form-control" />
+</div>
+<button type="button" @onclick="ViewModel.CalculateCommand.Execute" class="btn btn-primary">Calculate</button>
+
+@if (ViewModel.Result != null)
+{
+    <p>The draft benefit % is: <strong>@ViewModel.Result</strong></p>
+}
+
+@code {
+}
